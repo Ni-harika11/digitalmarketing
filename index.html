@@ -1,41 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GraphicsMart | Creative Solutions</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="GraphicsMart Logo">
-            </a>
-        </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-            </ul>
-            <a href="contact-us.html" class="btn-contact">Contact</a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+    <header class="main-header">
+        <!-- Top Navigation (Black Bar) -->
+        <div class="top-nav">
+            <div class="container-fluid header-flex">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <a href="index.html" class="logo-box">
+                        <img src="assets/logo.png" alt="Graphics Mart Logo" class="brand-logo">
+                        <div class="logo-text">
+                            <span class="brand-name">Graphics Mart</span>
+                            <span class="brand-tagline">Design & Print</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Location Section -->
+                <div class="location-section">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="location-text">
+                        <span class="line-1">Delivering to XYZ</span>
+                        <span class="line-2">Update Location</span>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-section">
+                    <div class="search-bar">
+                        <div class="search-dropdown">
+                            <span>All</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <input type="text" placeholder="Search Graphic Mart Products" class="search-input">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Controls -->
+                <div class="nav-controls">
+                    <div class="nav-item language">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png"
+                            alt="India Flag" class="flag">
+                        <span>EN</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <div class="lang-dropdown">
+                            <div class="lang-option active">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png"
+                                    alt="India">
+                                <span>English (EN) - IN</span>
+                            </div>
+                            <div class="lang-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png"
+                                    alt="USA">
+                                <span>English (EN) - US</span>
+                            </div>
+                            <div class="lang-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/20px-Flag_of_the_United_Kingdom.svg.png"
+                                    alt="UK">
+                                <span>English (EN) - UK</span>
+                            </div>
+                            <div class="lang-option">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/20px-Flag_of_the_United_Arab_Emirates.svg.png"
+                                    alt="UAE">
+                                <span>Arabic (AR) - AE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hamburger for mobile -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </nav>
+        </div>
+
+        <!-- Sub Navigation (Red Bar) -->
+        <div class="sub-nav">
+            <div class="container header-flex">
+                <ul class="sub-nav-links">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="graphic-design.html">Graphic Design</a></li>
+                    <li><a href="web-development.html">Web Development</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="printing-services.html">Printing Services</a></li>
+                </ul>
+                <a href="#" class="btn-samples">Samples</a>
+            </div>
+        </div>
     </header>
+
+    <!-- Notice Bar -->
+    <div class="notice-bar">
+        <p>🚀 Elevate Your Brand with Award-Winning Digital Marketing & Strategic Growth Solutions. <a
+                href="#services">Book a Free Consultation &rarr;</a></p>
+    </div>
+
+    <!-- Top Promo Slider -->
+    <section class="promo-slider">
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide">
+                    <img src="assets/image5.png" alt="Premium Design Solutions">
+                </div>
+                <div class="slide">
+                    <img src="assets/slider2.png" alt="Custom Branding Solutions">
+                </div>
+                <div class="slide">
+                    <img src="assets/slider3.png" alt="Premium Printing">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero1.png" alt="Digital Growth Solutions">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero2.png" alt="Strategic Marketing Banner">
+                </div>
+                <div class="slide">
+                    <img src="assets/image6.png" alt="Creative Digital Solutions">
+                </div>
+                <div class="slide">
+                    <img src="assets/image1.0.png" alt="Premium Design Showcase">
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <button class="slider-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-arrow next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Core Services Section (Icons) -->
+    <section class="categories-section">
+        <div class="container text-center">
+            <div class="expertise-header">
+                <h2 class="section-title">Drive Results with Our <span>Core Expertise</span></h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=300"
+                            alt="SEO" class="cat-img">
+                    </div>
+                    <p>Search Engine SEO</p>
+                </div>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=300"
+                            alt="Social Media" class="cat-img">
+                    </div>
+                    <p>Social Media Ads</p>
+                </div>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300"
+                            alt="Analytics" class="cat-img">
+                    </div>
+                    <p>Data Analytics</p>
+                </div>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=300"
+                            alt="PPC" class="cat-img">
+                    </div>
+                    <p>Google Ads (PPC)</p>
+                </div>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&q=80&w=300"
+                            alt="Content Strategy" class="cat-img">
+                    </div>
+                    <p>Content Marketing</p>
+                </div>
+                <div class="category-item">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=300"
+                            alt="Email Marketing" class="cat-img">
+                    </div>
+                    <p>Lead Generation</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="hero container">
         <div class="hero-content">
-            <h1>Transform Your Brand with <span>Creative Solutions</span></h1>
-            <p>From digital marketing to website development, graphic design to high-quality prints — we craft powerful visuals to boost your business.</p>
-            <a href="#services" class="btn-primary">Explore Services</a>
+            <h1>Accelerate Your <span>Business Growth</span> Digitally</h1>
+            <p>We combine cutting-edge technology with data-driven marketing strategies to elevate your brand's online
+                presence and maximize your ROI.</p>
+            <a href="#services" class="btn-primary">View Growth Roadmap</a>
         </div>
         <div class="hero-image">
             <img src="assets/image1.0.png" alt="Workspace">
@@ -47,50 +229,64 @@
     </section>
 
     <section id="services" class="services-section">
-    <div class="container text-center">
-        <div class="section-header"> 
-            <h2>Our <span>Services</span></h2>
-            <p>We provide creative, development, and marketing solutions to help your business grow online & offline.</p>
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>Our <span>Premium Services</span></h2>
+                <p>Comprehensive digital growth strategies designed to turn your prospects into loyal customers through
+                    strategic branding and technical excellence.</p>
+            </div>
+
+            <div class="services-grid">
+                <a href="graphic-design.html"
+                    style="text-decoration: none; color: inherit; display: block; height: 100%;">
+                    <div class="service-card">
+                        <div class="card-content">
+                            <div class="icon-box">🎨</div>
+                            <h3>Graphic Design</h3>
+                            <p>Eye-catching logos, branding, and social media graphics to make your business stand out.
+                            </p>
+                            <span class="cta-link">View Portfolio <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="web-development.html"
+                    style="text-decoration: none; color: inherit; display: block; height: 100%;">
+                    <div class="service-card">
+                        <div class="card-content">
+                            <div class="icon-box">💻</div>
+                            <h3>Web Development</h3>
+                            <p>Responsive, fast, and modern websites tailored to your needs using the latest tech.</p>
+                            <span class="cta-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="digital-marketing.html"
+                    style="text-decoration: none; color: inherit; display: block; height: 100%;">
+                    <div class="service-card">
+                        <div class="card-content">
+                            <div class="icon-box">📢</div>
+                            <h3>Digital Marketing</h3>
+                            <p>SEO and social media strategies to grow your audience and boost your sales.</p>
+                            <span class="cta-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="printing-services.html"
+                    style="text-decoration: none; color: inherit; display: block; height: 100%;">
+                    <div class="service-card">
+                        <div class="card-content">
+                            <div class="icon-box">🖨️</div>
+                            <h3>Printing Services</h3>
+                            <p>High-quality prints for business cards, flyers, and all your marketing materials.</p>
+                            <span class="cta-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="card-content">
-                    <div class="icon-box">🎨</div>
-                    <h3>Graphic Design</h3>
-                    <p>Eye-catching logos, branding, and social media graphics to make your business stand out.</p>
-                    <a href="#" class="cta-link">Get a Quote <span>&rarr;</span></a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="card-content">
-                    <div class="icon-box">💻</div>
-                    <h3>Web Development</h3>
-                    <p>Responsive, fast, and modern websites tailored to your needs using the latest tech.</p>
-                    <a href="#" class="cta-link">Get a Quote <span>&rarr;</span></a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="card-content">
-                    <div class="icon-box">📢</div>
-                    <h3>Digital Marketing</h3>
-                    <p>SEO and social media strategies to grow your audience and boost your sales.</p>
-                    <a href="#" class="cta-link">Get a Quote <span>&rarr;</span></a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="card-content">
-                    <div class="icon-box">🖨️</div>
-                    <h3>Printing Services</h3>
-                    <p>High-quality prints for business cards, flyers, and all your marketing materials.</p>
-                    <a href="#" class="cta-link">Get a Quote <span>&rarr;</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 
     <section id="portfolio" class="portfolio-section container">
@@ -99,47 +295,195 @@
             <p>Explore our creative work across multiple disciplines</p>
         </div>
         <div class="portfolio-grid">
-            <div class="portfolio-item"><img src="assets/image1.png" alt="Work 1"></div>
-            <div class="portfolio-item"><img src="assets/image2.png" alt="Work 2"></div>
-            <div class="portfolio-item"><img src="assets/image3.png" alt="Work 3"></div>
-            <div class="portfolio-item"><img src="assets/image4.png" alt="Work 4"></div>
-            <div class="portfolio-item"><img src="assets/image5.png" alt="Work 5"></div>
-            <div class="portfolio-item"><img src="assets/image6.png" alt="Work 6"></div>
-            <div class="portfolio-item"><img src="assets/image7.png" alt="Work 7"></div>
-            <div class="portfolio-item"><img src="assets/image8.png" alt="Work 8"></div>
-            <div class="portfolio-item"><img src="assets/image9.png" alt="Work 9"></div>
+            <div class="portfolio-item">
+                <img src="assets/image1.png" alt="Work 1">
+                <div class="portfolio-info">
+                    <h3>Social Media Campaign</h3>
+                    <p>Digital Marketing</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image2.png" alt="Work 2">
+                <div class="portfolio-info">
+                    <h3>SEO Optimization</h3>
+                    <p>Search Strategy</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image3.png" alt="Work 3">
+                <div class="portfolio-info">
+                    <h3>Brand Identity</h3>
+                    <p>Creative Design</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image4.png" alt="Work 4">
+                <div class="portfolio-info">
+                    <h3>Content Strategy</h3>
+                    <p>Marketing</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image5.png" alt="Work 5">
+                <div class="portfolio-info">
+                    <h3>PPC Management</h3>
+                    <p>Google Ads</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image6.png" alt="Work 6">
+                <div class="portfolio-info">
+                    <h3>Email Marketing</h3>
+                    <p>Lead Gen</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image7.png" alt="Work 7">
+                <div class="portfolio-info">
+                    <h3>Web Design</h3>
+                    <p>Development</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image8.png" alt="Work 8">
+                <div class="portfolio-info">
+                    <h3>Mobile App UI</h3>
+                    <p>UX Design</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/image9.png" alt="Work 9">
+                <div class="portfolio-info">
+                    <h3>E-commerce Growth</h3>
+                    <p>Scaling</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+        <div class="container badge-grid">
+            <div class="badge-item">
+                <div class="icon-badge">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <span>Premium Quality</span>
+            </div>
+            <div class="badge-item">
+                <div class="icon-badge">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <span>Secured Services</span>
+            </div>
+            <div class="badge-item">
+                <div class="icon-badge">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <span>100% Satisfaction</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top bar -->
+    <div class="back-to-top" onclick="scrollToTop()">
+        <p>Back to top</p>
+    </div>
+
+    <!-- Footer Sign In Section -->
+    <section class="footer-auth">
+        <div class="container text-center">
+            <button class="btn-signin">Sign in</button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <h2 class="footer-logo">GMART</h2>
-                <p>Creative design solutions to elevate your brand and digital presence.</p>
-            </div>
-            <div class="footer-col">
-                <h3>QUICK LINKS</h3>
+                <h3>COMPANY</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Our Location</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>CONTACT</h3>
-                <p>✉ yuvidollarama@gmail.com</p>
-                <p>📞 +91 7667189326</p>
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Return</a></li>
+                    <li><a href="#">Report</a></li>
+                </ul>
             </div>
             <div class="footer-col">
-                <h3>FOLLOW US</h3>
-                <p>Facebook | Instagram</p>
+                <h3>CONSUMER POLICY</h3>
+                <ul>
+                    <li><a href="#">Cancellation & Return</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h3>Head Office;</h3>
+                <p>Main Road, Bhagat Colony, Sant Nagar,<br>Burari North Delhi-110084</p>
+                <p>ph.+91-7667189326</p>
+                <div class="social-links">
+                    <span>Follow us on:</span>
+                    <div class="social-icons">
+
+                        <a href="https://www.facebook.com/share/14YEfx9z3Fb/" target="_blank"
+                            style="text-decoration: none;">
+                            <i class="fa-brands fa-facebook" style="color:#1877F2;"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/graphicsmart.in/" target="_blank"
+                            style="text-decoration: none;">
+                            <i class="fa-brands fa-instagram" style="color:#E4405F;"></i>
+                        </a>
+
+                        <a href="https://x.com/graphicsmart0" target="_blank" style="text-decoration: none;">
+                            <i class="fa-brands fa-x-twitter" style="color:#1DA1F2;"></i>
+                        </a>
+
+                        <a href="https://youtube.com/@graphicsmart0?si=DgvWdO5stcWgKJgq" target="_blank"
+                            style="text-decoration: none;">
+                            <i class="fa-brands fa-youtube" style="color:#FF0000;"></i>
+                        </a>
+
+                        <a href="https://wa.me/917667189326" target="_blank" style="text-decoration: none;">
+                            <i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="payment-methods text-center">
+            <p>Payment Method:</p>
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Paytm_Logo.png" alt="Paytm">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI">
+            </div>
+        </div>
+
         <div class="footer-bottom">
-            <p>© 2026 GMART. All rights reserved.</p>
+            <p>2026, Graphics Mart All Rights Reserved</p>
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917667189326?text=Hi, I'm interested in your Digital Marketing services!"
+        class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div class="whatsapp-tooltip">Chat with us!</div>
+    </a>
+
     <script src="script.js"></script>
 </body>
+
 </html>
