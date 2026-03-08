@@ -137,7 +137,7 @@ html {
 /* Search Bar Styles */
 .search-section {
     flex-grow: 1;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 .search-bar {
@@ -207,6 +207,22 @@ html {
 .nav-item .line-2 {
     font-size: 13px;
     font-weight: 700;
+}
+
+.nav-item.login {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-item.login i {
+    font-size: 16px;
+}
+
+.nav-item.orders {
+    justify-content: center;
 }
 
 .nav-item.language {
